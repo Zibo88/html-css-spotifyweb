@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******* COMMON ********/
+
+.flex {
+    display: flex;
+}
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+
+    /* test */
+    background-color: green;
+}
+
+
+
+
+/********* MAIN *************/
+
+.main-columns-container.flex{
+    background-color: aqua;
+    height: calc(100vh - 100px);
+}
+
+.col-left {
+    width: 250px;
+    overflow-y: hidden;
+
+    /* test */
+    background-color: darkorange;
+}
+
+.main-content {
+    width: calc(100% - 250px);
+    overflow-y: auto;
+
+    /* test */
+    background-color: darkseagreen;
+}
+
+
+/* UPGRADE */
+
+.upgrade {
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 250px);
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+    padding-right: 0.5rem;
+
+
+    /* test */
+    background-color: blue;
+}
+
+.upgrade span {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+
+    /* test */
+    background-color: pink;
+}
