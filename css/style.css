@@ -18,6 +18,10 @@
     background-color: green;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 
@@ -39,6 +43,7 @@
 .main-content {
     width: calc(100% - 250px);
     overflow-y: auto;
+    padding-top: 100px;
 
     /* test */
     background-color: darkseagreen;
@@ -47,8 +52,7 @@
 
 /* UPGRADE */
 
-.upgrade {
-    color: white;
+.upgrade-container {
     position: fixed;
     top: 0;
     right: 0;
@@ -58,18 +62,33 @@
     line-height: 60px;
     font-size: 13px;
     padding-right: 0.5rem;
+    opacity: 0.5;
 
 
     /* test */
     background-color: blue;
 }
 
-.upgrade span {
+.upgrade{
     border: 1px solid white;
     border-radius: 20px;
     padding: 0.5rem 1.2rem;
     font-size: 10px;
+    color: white;
 }
+
+.upgrade{
+    transform: scale(1.2);
+}
+
+
+/******COL-LEFT *******/
+
+
+
+
+
+
 
 
 
