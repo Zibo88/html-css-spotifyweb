@@ -92,11 +92,11 @@ ul{
 
 /******COL-LEFT *******/
 
+/* col-left-top */
 .col-left #logo {
     width: 150px;
     padding-top: 26px;
     padding-left: 1rem;
-    
 }
 
 .col-left #logo-small {
@@ -105,13 +105,8 @@ ul{
     display: none;
 }
 
-
-
 .action.flex{
-
     flex-direction: column;
-
-
     /* test */
     background-color: bisque;
 }
@@ -133,7 +128,7 @@ ul{
 .action-item .action-item-caption {
     position: absolute;
     top: 15px;
-    color: #4c4c4c;
+    color: #626262;
     font-weight: 600;
     font-size: 13px;
 }
@@ -147,6 +142,193 @@ ul{
     border-left: 5px solid #adff2e;
     padding-left: 5px;
 }
+
+/* col-left-middle*/
+
+.playlist{
+    padding: 10px 0 5px 12px;
+    font-size: 13px;
+    color: white;
+}
+
+/* aggiungere una playlist */
+.add-playlist{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: #a3a3a3;
+    margin-left: 12px;
+    
+}
+
+#plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #626262;
+}
+
+.customization.flex span a {
+    font-size: 13px;
+    color: #626262;
+    padding: 5px;
+   
+}
+
+.add-playlist i:hover{
+    background-color: white;
+}
+.customization.flex a:hover{
+    color: white;
+}
+
+/* playlist personalizzate */
+
+.name-list{
+    padding:12px;
+    overflow-y: auto;
+}
+
+.name-list-item {
+    padding-top: 5px;
+    color: #626262;
+    font-size: 12px;
+    overflow-y: auto;
+}
+
+.name-list-item:hover{
+    color: white;
+}
+
+/* col-left-bottom */
+
+.col-left-bottom{
+    position: relative;
+    padding-left: 8px;
+    text-align:
+}
+
+.col-left-bottom .download {
+    width: 20px;
+    filter: brightness(34%);
+}
+
+.col-left-bottom span{
+    font-size: 10px;
+    position: absolute;
+    top: 4px;
+    padding-left: 5px;
+    color: #626262;
+}
+
+.col-left-bottom span:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    
+
+    /* test */
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media col-left */
 @media screen and (max-width:600px) {
@@ -176,6 +358,10 @@ ul{
     #first-item{
         border: none;
     }
+
+    .playlist-container {
+        display: none;
+    }
 }
 
 
@@ -186,20 +372,3 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
-footer {
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-
-    /* test */
-    background-color: pink;
-}
