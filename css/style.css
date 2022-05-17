@@ -9,6 +9,7 @@
 body {
     font-family: Montserrat, sans-serif;
 }
+
 .flex {
     display: flex;
 }
@@ -28,6 +29,16 @@ a {
 ul{
     list-style-type: none;
 }
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 10px 15px;
+}
+
+
 
 
 
@@ -53,9 +64,9 @@ ul{
     width: calc(100% - 250px);
     overflow-y: auto;
     padding-top: 100px;
-    background-color: black;
+    /* background-color: black; */
     /* test */
-    /* background-color: darkseagreen; */
+    background-color: lightblue;
 }
 
 
@@ -154,7 +165,7 @@ ul{
 }
 
 .playlist{
-    padding: 10px 0 5px 12px;
+    padding:  1.2rem 0 1rem 0.8rem;
     font-size: 13px;
     color: white;
 }
@@ -225,10 +236,10 @@ ul{
 
 .col-left-bottom span{
     font-size: 13px;
-    position: absolute;
     top: 4px;
     padding-left: 5px;
     color: #626262;
+   vertical-align: super;
 }
 
 .col-left-bottom span:hover{
@@ -248,7 +259,7 @@ ul{
     flex-direction: column;
     height: 100%;
     justify-content: end;
-    align-items: center;  
+    
 }
 
 .picture-profile-container.flex{
@@ -267,8 +278,79 @@ ul{
     color: white;
     font-weight: 600;
     font-size:13px;
+}
+
+/************** MAIN CONTENT ***************/
 
 
+
+.category-list.flex{
+    justify-content: center;
+}
+
+.category-item {
+    padding: 10px 10px;
+    font-size: 11px;
+    color: #777a7e;
+    font-weight: 900;
+}
+
+.category-item:hover{
+    color: white;
+}
+
+
+#first-category-item{
+    width: 30%;
+    border-bottom: 3px solid #adff2e;
+    margin: 0 auto;
+    
+}
+
+.recently-played-columns.flex{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+   
+}
+
+.card{
+    width: calc((100% / 6) - 0.86rem);
+    
+    
+}
+
+.main-content h2{
+    color:white;
+    margin: 1.2rem 0;
+   
+}
+
+.main-content h4{
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.card-caption{
+    text-align: center;
+}
+
+.sub-title{
+    color:#777a7e;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0.5rem 0 1rem 0;
+}
+
+#card-row2{
+    /* DA RIMUOVERE NELLA MEDIA QUERY */
+    margin-left: 0.86rem;
+}
+
+.card.row3{
+   
 }
 
 
@@ -280,7 +362,7 @@ ul{
 
 
 
-
+/****************** FOOTER *************** */
 
 footer {
     width: 100%;
