@@ -425,9 +425,8 @@ footer {
     color: white;
 }
 
-.media-player:hover .media-player-item {
-    transform: scale(1.5);
-    
+#footer-play:hover{
+    transform: scale(1.5); 
 }
 
 #footer-play i{
@@ -546,14 +545,14 @@ footer {
         display: inline;
         margin-left:0.5rem
     }
+
     .action-item-caption, .action-item-caption{
         display: none;
     }
 
     #first-item{
         border: none;
-        padding-left: 0.5rem;
-        
+        padding-left: 0.5rem; 
     }
 
     /* .list-item-icon {
