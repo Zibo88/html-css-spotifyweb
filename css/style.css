@@ -78,7 +78,7 @@ section{
     padding-top: 28px;
     font-size: 10px;
     padding-right: 1rem;
-    opacity: 0.5;
+    opacity: 0.8;
 
 
     /* test */
@@ -375,10 +375,7 @@ footer {
     width: 100%;
     height: 100px;
     overflow: hidden;
-    
-
-    /* test */
-    background-color: pink;
+    background-color: black;
 }
 
 .footer-columns.flex{
@@ -390,7 +387,6 @@ footer {
 
 /* prima colonna */
 .footer-col1.flex {
-    width: 13%%;
     align-items: center;
     justify-content: space-around;
 } 
@@ -416,9 +412,17 @@ footer {
     color: white;
 }
 
+.footer-icon-container {
+    margin-left: 4rem;
+}
+
 .footer-icon-item{
     padding: 0 0.5rem;
     color: #777a7e;
+}
+
+.footer-icon-item:hover{
+    color:white;
 }
 
 .footer-col2 {
@@ -438,6 +442,11 @@ footer {
     color: white;
 }
 
+.media-player:hover .media-player-item {
+    transform: scale(1.5);
+    
+}
+
 #footer-play i{
     font-size: 23px;
 }
@@ -450,7 +459,6 @@ footer {
     width: 88%;
     height: 2%;
     position: relative;
-   
 }
 
 .loading-bar-container.flex span {
@@ -463,8 +471,6 @@ footer {
     width: 30%;
 }
 
-
-
 .progress-bar i{
     position: absolute;
     top: -0.5rem;
@@ -475,31 +481,21 @@ footer {
 }
 
 .progress-bar:hover{
-    border: 2px solid #adff2e;
-    
+    border: 1px solid #adff2e;
 }
 
 .progress-bar:hover i{
     display: inline-block;
 }
 
-
-
-
-
-
-
-
-
 .loading-bar-container.flex{
     align-items: center;
 }
 
-
-
 /* colonna3 */
 .footer-col3 {
     width: 15%;
+    align-items: center;
 }
 
 .col3-item i {
@@ -507,83 +503,40 @@ footer {
     padding: 0 0.2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.volume-bar{
+    border: 1px solid #777a7e;
+    background-color:#777a7e ;
+    width: 88%;
+    height: 2%;
+    position: relative;  
+}
+
+.progress-volume-bar {
+    border: 1px solid #c1c1c1 ;
+    width: 30%;
+}
+
+.volume-bar i{
+    position: absolute;
+    top: -0.5rem;
+    left: 9rem;
+    color: white;
+    display:none;
+}
+
+.progress-volume-bar:hover{
+    color: #adff2e;
+}
+
+.volume-bar:hover i{
+    display: inline-block;
+}
+
+
+
+
+/* *******************************
+************ MEDIA ****************/
 
 /* Media col-left */
 @media screen and (max-width:600px) {
@@ -638,7 +591,20 @@ footer {
 
     .category-item {
         width: calc((100% / 5) - 1rem);
-    }       
+    }      
+    
+}
+
+@media screen and (min-width:1200px) {
+
+    .progress-bar i {
+        position: absolute;
+        top: -0.5rem;
+        left: 10rem;
+        font-size: 1.2rem;
+        color: white;
+        display:none;
+    }
 }
 
 @media screen and (max-width:700px) {
