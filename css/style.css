@@ -425,8 +425,12 @@ footer {
     color: white;
 }
 
+#footer-play{
+    display: inline-block;
+}
+
 #footer-play:hover{
-    transform: scale(1.5); 
+    transform: scale(1.5);
 }
 
 #footer-play i{
