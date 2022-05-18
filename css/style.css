@@ -115,7 +115,8 @@ section{
 
 
 .action-item .list-item-icon {
-    width: 35px;
+    width: 30px;
+    padding: 0.4rem 0;
 }
 
 .action-item .list-item-icon:hover{
